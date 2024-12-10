@@ -1,0 +1,290 @@
+:root{
+    --main-bg-color: #1E202B;
+    --main-clickable-color: #009ad8;
+    --weather-forecast-heading-bg: #2D303D;
+    --footer-bg: #262936;
+
+    --light-color: #FFFFFF;
+    --main-color: #bfc1c8;
+
+    --main-font: "Open Sans", sans-serif;
+
+    --main-transition-effect: all  ease-in-out 0.3s;
+
+    --contact-section-bg: #262936;
+}
+
+/* *=============================Start MAIN==================================== */
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--main-font-color);
+    font-family: var(--main-font);
+    overflow-x: hidden;
+    
+}
+
+.navbar, .forecast-section{
+    background-color:var(--main-bg-color) ;
+}
+.search-input{
+    width: 100% ;
+    background-color: var(--main-bg-color);
+    color: var(--light-color);
+    padding: 20px 50px 20px 20px;
+    text-transform: capitalize;
+}
+.search-input:focus{
+    outline: 0;
+}
+.find-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0 42px;
+    background-color: var(--main-clickable-color);
+    color: var(--light-color);
+
+ 
+}
+/* *=============================End MAIN==================================== */
+
+/* *=============================Start NavBar-Section==================================== */
+.navbar-collapse{
+    position: relative;
+    left: 25%;
+}
+.navbar-brand{
+    padding: 3%;
+}
+
+.nav-item{
+    padding: 0 7px;
+}
+.navbar .nav-item a{
+    color: var(--light-color);
+    font-size: 0.8rem;
+    padding: 3px 55px;
+    border: 2px solid transparent;
+    
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+    transition: border 0.3s ease-in-out;
+    -webkit-transition: border 0.3s ease-in-out;
+    -moz-transition: border 0.3s ease-in-out;
+    -ms-transition: border 0.3s ease-in-out;
+    -o-transition: border 0.3s ease-in-out;
+}
+.navbar .nav-item a:hover{
+    border: var(--main-clickable-color) 2px solid ;
+    color: var(--main-clickable-color);
+}
+.navbar .nav-item .active{
+    border: var(--main-clickable-color) 2px solid;
+    color: var(--main-clickable-color);
+    
+}
+
+.site-title{
+    font-size: 1rem;
+}
+.site-description{
+    color: var(--main-color);
+    font-size: 0.6rem;
+}
+
+.navbar-toggler-icon{
+    background-color: var(--light-color);
+}
+
+/* *=============================End NavBar-Section==================================== */
+
+/* *=============================Start Header-Section==================================== */
+.header-section{
+    min-height: 250px;
+    background-image: url(../Images/banner.png);
+    background-position: cover  ;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+}
+/* *=============================End Header-Section==================================== */
+
+
+/* *=============================Start Forecast-Section==================================== */
+.forecast-section{
+    min-height: 250px;
+    
+}
+
+.forecast-table{
+    /* position: absolute; */
+    /* top: 45%;
+    bottom: 10%;
+    right: 12.5%;
+     */
+     width: 100%;
+}
+
+.forecast-day{
+    background-color: var(--weather-forecast-heading-bg);
+    color: var(--main-color);
+}
+.forecast-table > div:nth-child(2){
+    background-color: #262936 ;
+}
+
+.forecast-header{
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    padding: 7px;
+}
+.forecast-header h6{
+    font-size: 14px;
+}
+
+.forecast-header  h2{
+    font-size: 70px;
+}
+
+.degree{
+    color: var(--light-color);
+}
+.weather-state{
+    color: var(--main-clickable-color);
+}
+
+.weather-data span{
+    padding-right: 1rem;
+
+}
+.weather-data span img{
+    width: 5%;
+}
+
+/* *=============================End Forecast-Section==================================== */
+
+
+/* *=============================Start Footer-Section==================================== */
+
+footer{
+    background-color: var(--footer-bg);
+}
+
+footer .search-input{
+    width: 80% ;
+}
+footer .find-btn{
+    right: 85px;
+}
+footer .inner-inputs{
+    width: 130%;
+}
+
+footer .icon-list li{
+    font-size: 1.25rem;
+    background-color: var(--main-bg-color);
+    transition: var(--main-transition-effect);
+    -webkit-transition: var(--main-transition-effect);
+    -moz-transition: var(--main-transition-effect);
+    -ms-transition: var(--main-transition-effect);
+    -o-transition: var(--main-transition-effect);
+}
+footer .icon-list li svg{
+    color: var(--main-clickable-color);
+    transition: var(--main-transition-effect);
+    -webkit-transition: var(--main-transition-effect);
+    -moz-transition: var(--main-transition-effect);
+    -ms-transition: var(--main-transition-effect);
+    -o-transition: var(--main-transition-effect);
+}
+
+footer .icon-list li:hover{
+    background-color: var(--main-clickable-color);
+}
+footer .icon-list li:hover svg{
+    color: var(--light-color);
+}
+
+footer p{
+    color: var(--main-color);
+    font-size: 0.9rem;
+}
+
+/* *=============================End Footer-Section==================================== */
+
+
+
+/* *=============================Start Compass-Site==================================== */
+
+    .compass-site{
+        background-color: var(--main-bg-color);
+    }
+    /* ?=============================Start Header-Section==================================== */
+    .header-site {
+        color: var(--main-color);
+    }
+    .contact-details{
+        background-color: var(--contact-section-bg);
+        
+    
+    }
+    .contact-info h5{
+        font-size: 0.9rem;
+    }
+    .contact-info svg{
+        color: var(--main-clickable-color);
+    }
+
+    .header-site .contact-info a{
+        text-decoration: none;
+        color: var(--main-color);
+    }
+
+
+
+    .contact-form .search-input , textarea{
+        border: 2px solid #393c48;
+        color: #75756B;
+        padding: 15px;
+    }
+    .contact-form  .find-btn{
+        position: relative;
+        
+        left: 75%;
+        padding: 1px;
+    }
+    .contact-form .contact-inputs input, .contact-form .contact-inputs textarea{
+        color: var(--light-color);
+    }
+    .header-home-link .search-input{
+        border: 0;
+        background-color:#393c48 ;
+
+    }
+    .header-home-link a{
+        position: absolute;
+        right: 90%;
+        top: 30%;
+        color: var(--main-color);
+    }
+    .header-home-link a:hover{
+        text-decoration: underline;
+    }
+    .header-home-link span{
+        position: absolute;
+        right: 85%;
+        top: 30%;
+        color: var(--light-color);
+    }
+    .header-home-link svg{
+        font-size: 0.8rem;
+    }
+    /* ?=============================End Header-Section==================================== */
+
+/* *=============================End Compass-Site==================================== */

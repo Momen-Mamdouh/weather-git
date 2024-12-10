@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+
+    <!--? ================================FONTS=====================================  -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bree+Serif&family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!--? ================================FONTS=====================================  -->
+
+    <!--? ================================STYLESHEETS=====================================  -->
+
+      <link rel="stylesheet" href="CSS/all.min.css">
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/weatherStyleSheet.css">
+      
+    <!--? ================================STYLESHEETS=====================================  -->
+
+</head>
+
+
+<body>
+<!--^ ================================START NAVBAR SECTION=====================================  -->
+
+    <nav class="navbar navbar-expand-lg  text-white">
+        <div class="container p-2">
+            <a class="navbar-brand text-white  ms-2  d-flex" href="./index.html">
+                <img src="./Images/logo.png" alt="Logo"  width="64" height="38">  
+                <div class="logo-type d-flex flex-column ms-2">
+                  <h1 class="site-title pb-0 mb-0 align-bottom">Weather</h1>
+                  <small class="site-description ">tagline goes here</small>
+                </div>
+            </a>
+            
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link home px-4 active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link px-4" href="#news">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#liveCameras">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4" href="#photos">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact px-4" href="#contacts">Contacts</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+<!--^ ================================END NAVBAR SECTION=====================================  -->
+
+
+
+<!--^ ================================START HEADER SECTION=====================================  -->
+    <header class="header-section position-relative ">
+          <div class="container py-5 w-75">
+              <div class="inner-inputs position-relative  text-center z-2">
+                  <input type="text" placeholder="Find your Location..." class="search-input py-3 rounded-5 location-search">
+                  <input type="button" value="Find" class="find-btn pt-2 pb-2 rounded-5 text-center"  >
+              </div>
+          </div>
+
+        
+    </header>
+
+<!--^ ================================END HEADER SECTION=====================================  -->
+
+
+<!--^ ================================START FORECAST SECTION=====================================  -->
+    <div class="forecast-section pb-4">
+
+      <div class="container w-75">
+          <div class="forecast-table row  m-auto ">
+                <div class="forecast-day  col-md-4 rounded-3">
+                    <div class="row ">
+
+                          <div class="col-sm-12 forecast-header  ">
+                            <h6 class="d-flex justify-content-between"><span class="day-in-week">Thursday</span> 
+                              <span class="day-in-month">5December</span></h6>
+                          </div>
+
+                          <div class="col-sm-12 forecast-content">
+
+                              <div class="location text-start pt-3 px-2">
+                                <h5>Cairo</h5>
+                              </div>
+
+                              <div class="degree">
+
+                                  <div class="degree-num pb-2">
+                                    <h2>18.3
+                                      <sup>o</sup>
+                                      C
+                                    </h2>
+                                  </div>
+
+                                  <div class="degree-image pb-2">
+                                      <img src="./Images/weatherTry.webp" alt="">
+                                  </div>
+
+                                  <div class="weather-state pb-2">
+                                    <h6 >Parthly Cloud</h6>
+                                  </div>
+                              </div>
+
+                              <div class="weather-data pb-4">
+
+                                <span class="umberlla">
+                                  <img src="./Images/icon-umberell.png" alt="" >
+                                  20%
+                                </span>
+
+                                <span class="wind">
+                                  <img src="./Images/icon-wind.png" alt="">
+                                  18 km/h
+                                </span>
+
+                                <span class="wind-direaction">
+                                  <img src="./Images/icon-compass.png" alt="">
+                                  East
+                                </span>
+
+                              </div>
+                          </div>
+
+                    </div>
+                </div>
+
+              <div class="forecast-day col-md-4 rounded-3">
+                    <div class="row">
+
+                          <div class="col-sm-12 forecast-header">
+                            <h5 class=" text-center "><span class="day-in-week">Thursday</span> </h5>
+                          </div>
+
+                          <div class="col-sm-12  forecast-content pt-5">
+
+
+                              <div class="degree d-flex align-items-center justify-content-center flex-column">
+
+                                <div class="degree-image pb-2">
+                                  <img src="./Images/weatherTry.webp" alt="">
+                                </div>
+
+                                  <div class="degree-num fs-5 pb-2">
+                                    <h2>18.3
+                                      <sup>o</sup>
+                                      C
+                                    </h2>
+                                  </div>
+
+                                  <div class="weather-state pb-2">
+                                    <h6 >Parthly Cloud</h6>
+                                  </div>
+
+                              </div>
+
+    
+                          </div>
+                          
+                    </div>
+
+                </div>
+
+                <div class="forecast-day col-md-4   rounded-3 ">
+
+                    <div class="row">
+
+                      <div class="col-sm-12 forecast-header">
+                        <h5 class=" text-center "><span class="day-in-week">Thursday</span></h5> 
+                      </div>
+
+                      <div class="col-sm-12  forecast-content pt-5">
+
+
+                          <div class="degree d-flex align-items-center justify-content-center flex-column">
+
+                            <div class="degree-image pb-2">
+                              <img src="./Images/weatherTry.webp" alt="">
+                            </div>
+
+                              <div class="degree-num fs-5 pb-2">
+                                <h2>18.3
+                                  <sup>o</sup>
+                                  C
+                                </h2>
+                              </div>
+
+                              <div class="weather-state pb-2">
+                                <h6 >Parthly Cloud</h6>
+                              </div>
+
+                          </div>
+
+
+                      </div>
+                      
+                    </div>
+
+                </div> 
+
+          </div>
+
+      </div>
+
+
+    </div>
+
+
+
+<!--^ ================================END FORECAST SECTION=====================================  -->
+
+<!--^ ================================START FOOTER SECTION=====================================  -->
+
+    <footer>
+        <div class="footer-section">
+          <div class="container py-5 ">
+            <div class="row">
+              <div class="col-md-6 ">
+                <div class="inner-inputs  position-relative  text-center ">
+                  <input type="email" placeholder="Enter Your Email to subscribe..." class="search-input py-2 rounded-5">
+                  <input type="button" value="Subscribe" class="find-btn  rounded-5 text-center "  >
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer-icons">
+                  <ul class="icon-list d-flex justify-content-center ">
+                      <li class=" list-unstyled rounded-5 px-3 p-2 mx-1"> <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li class=" list-unstyled rounded-5 px-3 p-2 mx-1"> <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li class=" list-unstyled rounded-5 px-3 p-2 mx-1"> <a href="https://myaccount.google.com/"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                      <li class=" list-unstyled rounded-5 px-3 p-2 mx-1"> <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+            <p class="px-5 mx-4 py-3 ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+        </div>
+    </footer>
+
+<!--^ ================================END FOOTER SECTION=====================================  -->
+
+
+
+    <!--! ==========================================SCRIPTING==============================  -->
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+    <!--! ==========================================SCRIPTING==============================  -->
+
+    
+</body>
+
+
+
+</html>
